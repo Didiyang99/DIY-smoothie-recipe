@@ -11,7 +11,12 @@
     <form action="/taco">
       <p>
         <label for="username">Enter your username</label>
-        <input type="text" id="username" placeholder="Enter your username" />
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          name="username"
+        />
       </p>
       <p>
         <label for="password">Enter your password</label>
@@ -19,9 +24,18 @@
           type="password"
           id="password"
           placeholder="Enter your password"
+          name="password"
         />
       </p>
       <button>Submit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+      <p>
+        <label for="search">Find your fav smoothie recipe online</label>
+        <input type="text" id="search" name="q" />
+        <button>Search Google</button>
+      </p>
     </form>
   </body>
 </html>
